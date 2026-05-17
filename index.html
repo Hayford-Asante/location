@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Location | Code Wave I.T Training School</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <style>
+    :root {
+      --primary: #2563eb;
+      --dark: #0f172a;
+      --muted: #475569;
+      --surface: #ffffff;
+      --background: #f8fafc;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--background);
+      color: var(--dark);
+      line-height: 1.75;
+    }
+
+    .page-wrap {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 4rem;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 0 1rem;
+    }
+
+    header h1 {
+      font-size: clamp(2.5rem, 4vw, 3.5rem);
+      margin-bottom: 0.8rem;
+    }
+
+    header p {
+      color: var(--muted);
+      max-width: 720px;
+      margin: 0 auto;
+      font-size: 1.05rem;
+    }
+
+    .location-details {
+      margin: 2rem 0 3rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .detail-card {
+      background: var(--surface);
+      padding: 1.75rem;
+      border-radius: 22px;
+      border: 1px solid rgba(15, 23, 42, 0.08);
+      box-shadow: 0 16px 40px rgba(15, 23, 42, 0.06);
+    }
+
+    .detail-card h2 {
+      margin-bottom: 1rem;
+      font-size: 1.15rem;
+    }
+
+    .detail-card p,
+    .detail-card a {
+      color: var(--muted);
+      text-decoration: none;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .map-frame {
+      width: 100%;
+      height: 560px;
+      border: none;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 18px 50px rgba(15, 23, 42, 0.15);
+    }
+
+    .map-card {
+      background: var(--surface);
+      border-radius: 24px;
+      overflow: hidden;
+      padding: 1rem;
+      border: 1px solid rgba(15, 23, 42, 0.08);
+    }
+
+    .map-caption {
+      margin-top: 1rem;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .map-caption span {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(37, 99, 235, 0.1);
+      color: var(--primary);
+      padding: 0.65rem 1rem;
+      border-radius: 999px;
+    }
+
+    .cta-section {
+      text-align: center;
+      margin-top: 3rem;
+      padding: 2rem 1rem;
+      background: rgba(37, 99, 235, 0.08);
+      border-radius: 24px;
+      border: 1px solid rgba(37, 99, 235, 0.12);
+    }
+
+    .cta-section h2 {
+      margin-bottom: 1rem;
+      font-size: clamp(1.8rem, 3vw, 2.4rem);
+    }
+
+    .cta-section p {
+      max-width: 760px;
+      margin: 0 auto;
+      color: var(--muted);
+    }
+
+    .contact-buttons {
+      margin-top: 1.75rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .button-primary,
+    .button-secondary {
+      padding: 0.95rem 1.8rem;
+      border-radius: 999px;
+      font-weight: 700;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .button-primary {
+      background: var(--primary);
+      color: white;
+    }
+
+    .button-secondary {
+      background: transparent;
+      color: var(--primary);
+      border: 2px solid var(--primary);
+    }
+
+    .button-primary:hover,
+    .button-secondary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(37, 99, 235, 0.18);
+    }
+
+    @media (max-width: 768px) {
+      .hero-grid,
+      .location-details {
+        grid-template-columns: 1fr;
+      }
+
+      .map-frame {
+        height: 420px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrap">
+    <header>
+      <h1>Find Code Wave I.T Training School</h1>
+      <p>Our campus is located in Kasoa, Ghana. Use the map below to find us easily and reach out if you need directions.</p>
+    </header>
+
+    <div class="location-details">
+      <div class="detail-card">
+        <h2>Address</h2>
+        <p>Kasoa</p>
+        <p>Central Region</p>
+        <p>Ghana</p>
+      </div>
+      <div class="detail-card">
+        <h2>Contact</h2>
+        <a href="mailto:hayford718@gmail.com">hayford718@gmail.com</a>
+        <a href="tel:+233534396434">+233 534 396 434</a>
+      </div>
+      <div class="detail-card">
+        <h2>Office Hours</h2>
+        <p>Mon - Fri: 9:00 AM - 5:00 PM</p>
+        <p>Sat: 9:00 AM - 1:00 PM</p>
+      </div>
+    </div>
+
+    <div class="map-card">
+      <iframe
+        class="map-frame"
+        src="https://maps.google.com/maps?q=Kasoa%20Ghana&output=embed"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="map-caption">
+        <span><i class="fa-solid fa-location-dot"></i> Kasoa</span>
+        <span><i class="fa-solid fa-globe"></i> Ghana</span>
+      </div>
+    </div>
+
+    <div class="cta-section">
+      <h2>Visit Us at Code Wave I.T Training School</h2>
+      <p>If you're ready to learn web development, networking, or cybersecurity, our location is easy to reach. Drop in or contact us to schedule a tour of the campus.</p>
+      <div class="contact-buttons">
+        <a href="mailto:hayford718@gmail.com" class="button-primary">Email Us</a>
+        <a href="tel:+233534396434" class="button-secondary">Call Now</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
